@@ -1,0 +1,7 @@
+<div class="container">
+  <h2>English-Vietnamese Dictionary</h2>
+  <input type="text" class="form-control" (change)="search($event.target.value)">
+  <p class="alert-success my-2" *ngIf="word">
+    Nghĩa của từ {{word.key}}: {{word.meaning}}
+  </p>
+</div>
